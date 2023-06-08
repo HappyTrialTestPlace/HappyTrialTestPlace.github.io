@@ -1,0 +1,294 @@
+#welcome {
+    min-height: 100vh;
+    box-shadow: #ddd 0px 0px 10px 5px;
+    background: rgb(252, 252, 252);
+  }
+  #title-box {
+    text-align: center;
+    animation: fade-in 0.5s ease-out 0.3s both, 
+            going-down 0.5s ease-out 0.3s both;
+  }
+  #title-box > div {
+    margin: 10px 0 auto;
+  }
+  #title-box > div:first-child {
+    margin-top: 0px;
+  }
+  #title-box > div:last-child {
+    margin-bottom: 20px;
+  }
+  .title, h1 {
+    line-height: 48px;
+    line-height: 3rem;
+    font-size: 60px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: -3.2px;
+    letter-spacing: -0.2rem;
+    font-family: 'Gaegu', cursive;
+    color: rgb(134, 61, 61);
+  }
+  .sec-tit {
+    line-height: 35.2px;
+    line-height: 2.2rem;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 6.4px;
+    letter-spacing: 0.4rem;
+    font-family: 'Gaegu', cursive;
+  }
+  .time-logo {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/식빵.png');
+    background-size: cover;
+   
+  }
+  .time-logo + div {
+    font-weight: lighter;
+    letter-spacing: -0.5px;
+    font-family: 'Gaegu', cursive;
+  }
+  hr {
+    margin: 20px 0;
+    border: 1.5px dashed #222;
+  }
+  .w-line {
+    animation: fade-in 0.4s ease-out 0.9s both, 
+            going-down 0.4s ease-out 0.9s both;
+  }
+  #welcome > p:first-of-type {
+    padding: 0 5%;
+    line-height: 19.2px;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 13.6px;
+    font-size: 0.85rem;
+    font-weight: 400;
+    font-family: 'Gaegu', cursive;
+  }
+  #p-tit {
+    display: block;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: 'Gaegu', cursive;
+  }
+  #name-input {
+    box-sizing: border-box;
+    margin: 20px 25% 10px 25%;
+    width: 50%;
+    color: white
+  }
+  #name-input > input {
+    width: 100%;
+    height: 40px;
+    border: 1px #ddd solid;
+    border-radius: 20px;
+    font-weight: lighter;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Gaegu', cursive;
+    opacity: 0;
+    animation: fade-in 0.4s ease-out 1.4s both, 
+            going-down 0.4s ease-out 1.4s both;
+  }
+  .check-name {
+    display: inline-block;
+    margin: 10px 10%;
+    width: 80%;
+    text-align: center;
+  }
+  .warning {
+    color: rgba(255, 102, 173, 0.8);
+    font-weight: bold;
+    font-family: 'Gaegu', cursive;
+  }
+  .start-wrap {
+    margin: 0 20% 20px 20%;
+    width: 60%;
+  }
+  .start {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgba(114, 44, 48, 0.9);
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    font-size: 2rem;
+    font-family: 'Gaegu', cursive;
+    animation: fade-in 0.5s ease-out 1.9s both, 
+            going-down 0.5s ease-out 1.9s both,
+            start-flicker 2.5s infinite;
+    cursor: pointer;
+  }  
+  .start:hover, .start:focus {
+    animation-play-state: paused;
+  }
+  .start:active {
+    animation-play-state: running;
+  }
+  
+  @media all and (min-width: 486px) {
+    .title {
+      line-height: 64px;
+      line-height: 4rem;
+      font-size: 51.2px;
+      font-size: 3.2rem;
+      font-family: 'Gaegu', cursive;
+    }
+    .sec-tit {
+      line-height: 52.8px;
+      line-height: 3.3rem;
+      font-size: 32px;
+      font-size: 2rem;
+      font-family: 'Gaegu', cursive;
+    }
+    #welcome > p:first-of-type {
+      padding: 0 12.5%;
+      line-height: 22.4px;
+      line-height: 1.4rem;
+      font-size: 16px;
+      font-size: 1rem;
+      font-family: 'Gaegu', cursive;
+    }
+    #p-tit {
+      font-size: 28.8px;
+      font-size: 1.8rem;
+      font-family: 'Gaegu', cursive;
+    }
+  }
+  
+  @media all and (min-width: 768px) {
+    #title-box > div {
+      margin: 30px 0 auto;
+    }
+    #title-box > div:last-child {
+      margin: 20px 0 auto;
+      margin-bottom: 30px;
+    }
+    .title {
+      line-height: 80px;
+      line-height: 5rem;
+      font-size: 59.2px;
+      font-size: 3.7rem;
+      font-family: 'Gaegu', cursive;
+    }
+    .sec-tit {
+      line-height: 64px;
+      line-height: 4rem;
+      font-size: 40px;
+      font-size: 2.5rem;
+      font-weight: lighter;
+      letter-spacing: 8px;
+      letter-spacing: 0.5rem;
+      font-family: 'Gaegu', cursive;
+    }
+    .time-logo + div {
+      font-size: 17.6px;
+      font-size: 1.1rem;
+      letter-spacing: -0.8px;
+      letter-spacing: -0.05rem;
+      font-family: 'Gaegu', cursive;
+    }
+    #welcome > p:first-of-type {
+      padding: 0 15%;
+    }
+    #p-tit {
+      font-size: 28.8px;
+      font-size: 1.8rem;
+      font-family: 'Gaegu', cursive;
+    }
+    #name-input {
+      margin: 30px 30% 0 30%;
+      width: 40%;
+    }
+    #name-input > input {
+      height: 50px;
+    }
+    .check-name {
+      margin: 25px 20%;
+      width: 60%;
+      font-size: 17.6px;
+      font-size: 1.1rem;
+      font-family: 'Gaegu', cursive;
+    }
+    .start-wrap {
+      margin: 0px 20% 50px 20%;
+      width: 60%;
+    }
+    .start {
+      min-width: 80%;
+      height: 100px;
+      line-height: 100px;
+      font-size: 48px;
+      font-size: 3rem;
+      font-family: 'Gaegu', cursive;
+    }
+  }
+  
+  @media all and (min-width: 1024px) {
+    #title-box > div {
+      margin: 60px 0 auto;
+    }
+    .title {
+      line-height: 88px;
+      line-height: 5.5rem;
+      font-size: 67.2px;
+      font-size: 4.2rem;
+      font-family: 'Gaegu', cursive;
+    }
+    .sec-tit {
+      line-height: 56px;
+      line-height: 3.5rem;
+      font-size: 40px;
+      font-size: 2.5rem;
+      font-weight: lighter;
+      font-family: 'Gaegu', cursive;
+    } 
+    hr {
+      margin: 30px 5% 20px 5%;
+      width: 90%;
+    }
+    .time-logo + div {
+      font-size: 19.2px;
+      font-size: 1.2rem;
+      letter-spacing: -1.28px;
+      letter-spacing: -0.08rem;
+      font-family: 'Gaegu', cursive;
+    }
+    #welcome > p:first-of-type {
+      padding: 0 17.5%;
+      line-height: 27.2px;
+      line-height: 1.7rem;
+      font-size: 17.6px;
+      font-size: 1.1rem;
+      font-family: 'Gaegu', cursive;
+    }
+    #p-tit {
+      font-size: 32px;
+      font-size: 2rem;
+      font-family: 'Gaegu', cursive;
+    }
+    .check-name {
+      font-size: 19.2px;
+      font-size: 1.2rem;
+      font-family: 'Gaegu', cursive;
+    }
+  }
+  
+  @media all and (min-width: 1440px) {
+    hr {
+      margin: 35px 5% 35px 5%;
+      width: 90%;
+    }
+  }

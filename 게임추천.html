@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <link rel="stylesheet" href="./css/test.css">
+        <meta http-equiv="page-enter" content="blendTrans(duration=1.0)">
+        <meta http-equiv="page-exit" content="blendTrans(duration=1.0)">
+
+        <style>
+* {
+    font-family: 'NeoDunggeunmo';
+    position:relative;
+    
+            }
+            html{
+	scroll-behavior: smooth;
+    height: 100%;
+}
+
+            body {
+    height: 100vh;
+    background: url(https://blog.kakaocdn.net/dn/ccsd4c/btshp7irOMp/gVK8ggMvl9bCvUJdqxOpTK/img.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100%;
+    opacity: 1;
+    transition-duration: 1s;
+    transition-property: opacity;
+}
+
+body.fade {
+    opacity: 0;
+}
+
+.h2 {
+    float: center;
+    color:white;
+    font-size: 80px;
+    text-shadow: 3px 3px 3px palevioletred;
+    margin-top: 130px;
+    }
+
+
+    .find-btn{
+	text-align: center;
+    
+}
+.find-btn1{
+	display :inline-block;
+    width: 384px;
+    height: 144px;
+    margin-top: 150px;
+    font-size: 60px;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 10px;
+    border-color:black;
+}
+
+.find-btn1:hover {
+    color:black;
+}
+
+footer {
+    position : absolute;
+bottom : 0;
+color:white;
+}
+
+
+            @font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+            
+        </style>
+
+        <title> 나에게 어울리는 게임은? </title>
+    </head>
+
+    <body>
+
+    <h2 div class="h2"><center>나에게 어울리는 게임은?</center></h2>
+
+    
+  
+    <div class="find-btn">
+        <button type="button" class="btn btn-navy navbar-btn find-btn1" onclick="location.href='게임추천페이지2.html'">시작!</button>
+    </div>
+
+
+
+
+    
+
+    <footer>© Happy Trial Test Place</footer>
+
+    
+    
+
+
+    <script src="./js/test.js"></script>
+    <script>
+        document.body.className = 'fade';
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          window.setTimeout(() => {
+            document.body.className = '';
+          });
+        });
+      </script>
+    </body>
+</html>
