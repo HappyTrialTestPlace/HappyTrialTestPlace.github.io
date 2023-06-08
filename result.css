@@ -1,334 +1,248 @@
-
+/* result로 넘어갈 때 display: block; */
 #result {
-  display: none;
-  min-height: 100vh;
-  box-shadow: #ddd 0px 0px 10px 5px;
-  background: rgb(252, 252, 252);
-  text-align: center;
-  word-break: keep-all;
-  opacity: 0;
+	display: none;
+	min-height: 100vh;
+	background: rgb(255, 255, 255);
+	text-align: center;
+	word-break: keep-all;
+	opacity: 0;
 }
+
+.result.title {
+	margin-top: 40px;
+	font-size: 20px;
+	font-family: 'a고딕14', sans-serif;
+}
+
+.res.desc {
+	font-size: 18px;
+	font-family: 'a고딕13', sans-serif;
+	margin-bottom: 50px;
+}
+
 #score-box {
-  margin-bottom: 50px;
+	margin-bottom: 10px;
+	font-size: 25px;
+	font-family: 'a고딕15', sans-serif;
 }
 #score-box > .title {
-  animation: fade-in 0.6s ease-out 0.4s forwards, 
-          going-down 0.6s ease-out 0.4s forwards;
-  opacity: 0;
+	animation: fade-in 0.6s ease-out 0.4s forwards, going-down 0.6s ease-out 0.4s forwards;
+	opacity: 0;
+	margin-bottom: 30px;
 }
+
 #score-box > .point {
-  margin: 10px 0 50px 0;
-  font-size: 64px;
-  font-size: 4rem;
-  font-weight: bolder;
-  animation: fade-in 0.6s ease-out 1.8s forwards, 
-          going-down 0.6s ease-out 1.8s forwards;
-  opacity: 0;
+	margin: 10px 0 50px 0;
+	font-size: 64px;
+	font-size: 4rem;
+	font-weight: bolder;
+	animation: fade-in 0.6s ease-out 1.8s forwards, going-down 0.6s ease-out 1.8s forwards;
+	opacity: 0;
 }
 
 .art {
-  margin-bottom: 40px;
-  width: 100%;
-  height: 90vh;
-  max-height: 700px;
-  box-shadow: #ddd 0px 0px 10px 5px;
-  background-color: #fff;
-  animation: fade-in 0.3s ease-out 3.2s both, 
-          going-down 0.3s ease-out 3.2s both;
-  opacity: 0;
+	width: 100%;
+	height: 100%;
+	max-height: 700px;
+	background-color: #fff;
+	animation: fade-in 0.3s ease-out 3.2s both, going-down 0.3s ease-out 3.2s both;
+	opacity: 0;
 }
 .art > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 .desc {
-  margin: 30px 7.5%;
-  width: 85%;
-  line-height: 28.8px;
-  line-height: 1.8rem;
-  font-size: 17.6px;
-  font-size: 1.1rem;
-  font-weight: 350;
+	margin: 30px 7.5%;
+	width: 85%;
+	line-height: 28.8px;
+	line-height: 1.8rem;
+	font-size: 17.6px;
+	font-size: 1.1rem;
+	font-weight: 350;
 }
 #desc-box ~ p {
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 24px;
-  font-size: 1.5rem;
-  font-weight: bolder;
+	display: inline-block;
+	margin-top: 20px;
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: bolder;
 }
 .go-artist {
-  font-weight: bolder;
-  cursor: pointer;
-}
-#share-box {
-  box-sizing: border-box;
-  margin: 25px 10% 30px 10%;
-  padding: 10px;
-  width: 80%;
-  height: 50px;
-  border-radius: 40px;
-  background: #222;
-}
-#share-box span {
-  display: inline-block;
-  margin-right: 5px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-size: cover;
-  cursor: pointer;
-}
-.tw {
-  background-image: url('../img/tw.svg');
-  
+	font-weight: bolder;
+	cursor: pointer;
 }
 
-.nv {
-  background-image: url('../img/naver.png');
-  
+#share-box {
+	margin: 30% 10% 30% 10%;
+	padding: 7px;
+	width: 40%;
+	height: 30px;
+	border: solid 2px;
+	border-color: #fff000;
+	border-radius: 40px;
+}
+
+#share-box span {
+	display: inline-block;
+	margin-right: 5px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.copy {
+	background: ghostwhite;
+	background-image: url('../img/copy.png');
+}
+
+.kakao {
+	background-image: url('https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png');
+}
+
+.fb {
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg');
+}
+
+#copyright {
+	padding: 0 7.5%;
+	text-align: center;
+}
+
+#copyright > p {
+	line-height: 20.8px;
+	line-height: 1.3rem;
+	font-size: 8px;
+	font-size: 0.7273rem;
+	font-weight: 100;
+}
+
+#copyright > p > a {
+	color: rgba(94, 134, 255, 0.8);
+	font-weight: bolder;
 }
 
 .btn {
-  box-sizing: border-box;
-  margin: 0 30% 5px 30%;
-  width: 40%;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 20px;
-  background: #8e3535c4;
-  color: #fff;
-  font-weight: 500;
-  transition: background-color 0.2s ease-in-out;
-}
-.btn:hover {
-  background: #8e3535c4;
-}
-.btn > a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-}
-.hash {
-  padding: 15px 7.5% 0;
-  color: #ff75a7;
-  font-weight: bold;
-  word-wrap: break-word;
-}
-#intro-box {
-  padding-top: 20px;
+	box-sizing: border-box;
+	margin: 0 20% 15px 20%;
+	min-width: 200px;
+	height: 35px;
+	line-height: 30px;
+	border: 1.5px solid;
+	border-radius: 20px;
+	background: white;
+	color: black;
+	font-weight: 500;
+	transition: background-color 0.2s ease-in-out;
 }
 
-.art-name {
-  margin: 10px 0 20px 0;
-  font-size: 27.2px;
-  font-size: 1.7rem;
-  font-weight: bolder;
+.btn:hover {
+	color: #fff;
 }
-.artist {
-  margin: 0 7.5% 20px 7.5%;
-  font-size: 16.8px;
-  font-size: 1.05rem;
+
+.Urlcopy {
+	border-color: #1a7cff;
 }
-.go-share {
-  cursor: pointer;
+
+.Urlcopy:hover {
+	background: #1a7cff;
 }
-.caution {
-  padding: 0 7.5%;
+
+.Kakao {
+	border-color: #f7e600;
 }
-.caution > p {
-  line-height: 20.8px;
-  line-height: 1.3rem;
-  font-size: 15.2px;
-  font-size: 0.95rem;
-  font-weight: 400;
+
+.Kakao:hover {
+	background: #f7e600;
 }
-.caution > p > a {
-  color: #ff75a7;
-  font-weight: bolder;
-  transition: color 0.2s linear;
+
+.Insta {
+	border-color: #dd2a7b;
 }
-.caution > p > a:hover {
-  color: #ff75a7;
+
+.Insta:hover {
+	background: #dd2a7b;
 }
-.go-origin {
-  margin: 10px 10% 0 10%;
-  width: 80%;
+
+
+.hash {
+	padding: 25px 7.5% 25px;
+	color: #ad93ff;
+	font-family: 'a고딕14', sans-serif;
+	word-wrap: break-word;
 }
 
 /* media query */
 @media all and (min-width: 486px) {
-  .art {
-    max-height: 1100px;
-  }
-  .artist {
-    margin: 0 7.5% 30px 7.5%;
-  }
-  #share-box {
-    margin: 25px 20% 30px 20%;
-    width: 60%;
-  }
-  .hash {
-    padding: 20px 7.5% 0;
-  }
-  .artist {
-    font-size: 17.6px;
-    font-size: 1.1rem;
-  }
-  .caution {
-    padding: 5px 7.5%;
-  }
-  .caution > p {
-    line-height: 24px;
-    line-height: 1.5rem;
-    font-size: 16px;
-    font-size: 1rem;
-    font-family: 'Spoqa Han Sans', 'Sans-serif';
-  }
+	.art {
+		max-height: 1100px;
+	}
+	.artist {
+		margin: 0 7.5% 30px 7.5%;
+	}
 }
 
 @media all and (min-width: 768px) {
-  #score-box > .point {
-    font-size: 72px;
-    font-size: 4.5rem;
-    font-family: 'Spoqa Han Sans', 'Sans-serif';
-  }
-  .pin {
-    width: 40px; 
-    height: 40px;
-  }
-  .art {
-    max-height: 1500px;
-  }
-  .desc {
-    margin: 30px 7.5%;
-    line-height: 32px;
-    line-height: 2rem;
-    font-size: 19.2px;
-    font-size: 1.2rem;
-    font-family: 'Spoqa Han Sans', 'Sans-serif';
-  }
-  #share-box {
-    margin: 25px 30% 30px 30%;
-    width: 40%;
-  }
-  .hash {
-    padding: 25px 7.5% 0;
-    font-size: 17.6px;
-    font-size: 1.1rem;
-    font-family: 'Spoqa Han Sans', 'Sans-serif';
-  }
-  .btn {
-    margin: 0 30% 10px 30%;
-  }
-  #intro-box {
-    padding-top: 45px;
-  }
-  .art-name {
-    margin: 20px 0 25px 0;
-  }
-  .artist {
-    margin-bottom: 40px;
-  }
-  .caution {
-    padding: 10px 7.5%;
-  }
-  .caution > p {
-    line-height: 27.2px;
-    line-height: 1.7rem;
-    font-size: 17.6px;
-    font-size: 1.1rem;
-    font-family: 'Spoqa Han Sans', 'Sans-serif';
-  }
-  .go-origin {
-    margin: 20px 30% 0 30%;
-    width: 40%;
-  }
+	#score-box > .point {
+		font-size: 72px;
+		font-size: 4.5rem;
+	}
+	.pin {
+		width: 40px;
+		height: 40px;
+	}
+	.art {
+		max-height: 1500px;
+	}
+	.desc {
+		margin: 30px 7.5%;
+		line-height: 32px;
+		line-height: 2rem;
+		font-size: 19.2px;
+		font-size: 1.2rem;
+	}
+	
 }
 
 @media all and (min-width: 1024px) {
-  #score-box > .point {
-    font-size: 80px;
-    font-size: 5rem;
-    font-family: 'Spoqa Han Sans', 'Sans-serif';
-  }
-  .pin {
-    width: 50px; 
-    height: 50px;
-  }
-  .art {
-    margin: 0 5% 50px 5%;
-    width: 90%;
-    max-height: 2000px;
-  }
-  .desc {
-    font-size: 20.8px;
-    font-size: 1.3rem;
-    font-family: 'Spoqa Han Sans', 'Sans-serif';
-  }
-  .go-artist {
-    font-size: 17.6px;
-    font-size: 1.1rem;
-    font-family: 'Spoqa Han Sans', 'Sans-serif';
-  }
-  .caution {
-    padding: 15px 7.5%;
-  }
-  .hash {
-    font-size: 19.2px;
-    font-size: 1.2rem;
-    font-family: 'Spoqa Han Sans', 'Sans-serif';
-  }
-  #share-box {
-    margin: 25px 35% 30px 35%;
-    width: 30%;
-  }
-  .btn {
-    margin: 0 35%;
-    width: 30%;
-  }
-  .btn > a {
-    font-size: 16px;
-    font-size: 1rem;
-    font-family: 'Spoqa Han Sans', 'Sans-serif';
-  }
-  
-  .art-name {
-    margin: 20px 0 35px 0;
-  }
-  .go-origin {
-    margin: 25px 35% 0 35%;
-  }
+	#score-box > .point {
+		font-size: 80px;
+		font-size: 5rem;
+	}
+	.pin {
+		width: 50px;
+		height: 50px;
+	}
+	.art {
+		margin: 0 5%;
+		width: 90%;
+		max-height: 2000px;
+	}
+	.desc {
+		font-size: 20.8px;
+		font-size: 1.3rem;
+	}
+	
 }
 
 @media all and (min-width: 1440px) {
-  #score-box > .point {
-    font-size: 88px;
-    font-size: 5.5rem;
-    font-family: 'Spoqa Han Sans', 'Sans-serif';
-  }
-  .art {
-    max-height: 2000px;
-  }
-  .desc {
-    margin: 35px 5% 50px 5%;
-    width: 90%;
-    line-height: 33.6px;
-    line-height: 2.1rem;
-    font-size: 22.4px;
-    font-size: 1.4rem;
-    
-  }
-  .caution {
-    padding: 20px 10%;
-  }
-  .caution > p {
-    line-height: 28.8px;
-    line-height: 1.8rem;
-    font-size: 19.2px;
-    font-size: 1.2rem;
-  }
+	#score-box > .point {
+		font-size: 88px;
+		font-size: 5.5rem;
+	}
+	.art {
+		max-height: 2000px;
+	}
+	.desc {
+		margin: 35px 5% 50px 5%;
+		width: 90%;
+		line-height: 33.6px;
+		line-height: 2.1rem;
+		font-size: 22.4px;
+		font-size: 1.4rem;
+	}
 }

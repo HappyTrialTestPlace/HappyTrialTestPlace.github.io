@@ -223,8 +223,10 @@
       font-family: 'Gaegu', cursive;
     }
     .start-wrap {
-      margin: 0px 20% 50px 20%;
+      margin-left: auto;
+      margin-right: auto;
       width: 60%;
+      
     }
     .start {
       min-width: 80%;
@@ -233,6 +235,8 @@
       font-size: 48px;
       font-size: 3rem;
       font-family: 'Gaegu', cursive;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   
