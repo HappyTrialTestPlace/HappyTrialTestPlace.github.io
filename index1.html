@@ -36,7 +36,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 		
-		<link rel="stylesheet" type="text/css" href="css/default1.css" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/layout.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="css1footer.css" />
@@ -68,6 +68,851 @@
 
 			gtag('config', 'G-YCJN4CFTVY');
 		</script>
+		
+		<style>
+			body {
+background: #a4dcff; 
+}
+
+
+#wrap {
+	position: relative;
+	overflow: hidden;
+	margin-top: 50px;
+	width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	padding: 0px 0px 20px 0px;
+}
+.container {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 20px 0 25px 0;
+	width: 100%;
+	min-width: 100%;
+}
+
+#header {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 0px;
+	height: 0px;
+	background: #ffffff;
+	
+}
+
+#footer {
+	z-index: 10;
+	box-sizing: border-box;
+	width: 100%;
+	height: 60px;
+	padding: 10px 25px;
+	background: #ffffff;
+	font-weight: lighter;
+	animation: fade-in 0.3s ease-in-out 2s both;
+	opacity: 1;
+	font-family: 'a고딕14', sans-serif;
+}
+
+@media all and (min-width: 768px) {
+	#wrap {
+		margin-top: 115px;
+	}
+	.container {
+		padding: 60px 5% 50px 5%;
+		width: 80%;
+		min-width: 80%;
+		border-radius: 20px;
+	}
+	#header {
+		display: none;
+		margin: 0 10%;
+		padding: 0px 12.5px 12.5px 0px;
+		width: 80%;
+		height: 100px;
+		border-radius: 20px;
+	}
+
+	#footer {
+		margin: 40px 10% 0 10%;
+		padding: 15px 30px;
+		width: 80%;
+		height: 80px;
+		border-radius: 20px;
+	}
+}
+
+@media all and (min-width: 1024px) {
+	
+	#wrap {
+		margin-top: 150px;
+	}
+	.container {
+		padding: 100px 5% 40px 5%;
+		width: 70%;
+		min-width: 70%;
+		border-radius: 30px;
+	}
+	#header {
+		display: none;		
+		margin: 0 15%;
+		padding: 0px 15px 15px 0px;
+		width: 70%;
+		height: 100px;
+		border-radius: 30px;
+	}
+	#footer {
+		margin: 40px 15% 0 15%;
+		padding: 15px 30px;
+		width: 70%;
+		height: 80px;
+		border-radius: 20px;
+	}
+}
+
+@media all and (min-width: 1440px) {}
+	.container {
+		padding: 100px 3.5% 50px 3.5%;
+		width: 55%;
+		min-width: 55%;
+	}
+	#header {
+		display: none;
+		margin: 0 22.5%;
+		padding: 0px 15px 15px 0px;
+		width: 55%;
+		height: 100px;
+	}
+	#footer {
+		margin: 45px 22.5% 0 22.5%;
+		padding: 25px 30px;
+		width: 55%;
+		height: 80px;
+}
+			
+			#main {
+	min-height: 100vh;
+	background: #ffffff;
+	padding-top: 60px;
+}
+
+#titleBox {
+	text-align: center;
+	animation: fade-in 0.5s ease-out 0.3s both, going-down 0.5s ease-out 0.3s both;
+}
+
+:root {
+	--main-lightpink: #a4dcff;
+	--main-lightpurple: #ddd6f3;
+	--main-gray: #8d8d8d;
+	--main-lightgray: #a4dcff;
+	--warning-red: #ddd6f3;
+}
+
+h1,
+.mainText {
+	line-height: 48px;
+	line-height: 3rem;
+	font-size: 40px;
+	font-size: 2.5rem;
+	font-weight: bolder;
+}
+
+h3,
+.elevatorPitch {
+	line-height: 35.2px;
+	line-height: 2.2rem;
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: lighter;
+	color: var(--main-gray);
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+.main_img {
+	display: inline-block;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 250px;
+	height: 250px;
+}
+
+.time_logo {
+	display: inline-block;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 30px;
+	height: 30px;
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c6/Alarms_%26_Clock_icon.png');
+	background-size: cover;
+}
+
+#name-input {
+	box-sizing: border-box;
+	margin: 20px 30% 10px 35%;
+	width: 30%;
+}
+
+#name-input > input {
+	width: 100%;
+	height: 40px;
+	border: 1px solid;
+	border-color: var(--main-lightgray);
+	border-radius: 20px;
+	font-weight: lighter;
+	font-size: 19.2px;
+	font-size: 1.2rem;
+	text-align: center;
+	opacity: 0;
+	animation: fade-in 0.4s ease-out 1.4s both, going-down 0.4s ease-out 1.4s both;
+}
+
+#name-input :focus {
+	outline: none;
+}
+
+.check-name {
+	display: inline-block;
+	margin: 15px 10%;
+	width: 80%;
+	text-align: center;
+}
+.warning {
+	color: var(--warning-red);
+	font-family: 'a고딕14', sans-serif;
+}
+.start-wrap {
+	margin: 0 20% 0 26.5%;
+	width: 40%;
+	padding-top: 30px;
+}
+.start {
+	box-sizing: border-box;
+	width: 100%;
+	height: 70px;
+	line-height: 60px;
+	border-radius: 50px;
+	text-align: center;
+	background-color: #a4dcff;
+	border: 0;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 32px;
+	font-size: 2rem;
+	animation: fade-in 0.25s ease-out 0.95s both, going-down 0.25s ease-out 0.95s both,
+		start-flicker 1.5s infinite;
+	cursor: pointer;
+	margin-left: 10%;
+}
+.start:hover,
+.start:focus {
+	animation-play-state: paused;
+	background-color: var(--main-lightpurple);
+	border: none;
+	outline: none;
+}
+.start:active {
+	animation-play-state: running;
+}
+
+.BottomAdd {
+	padding-top: 40px;
+}
+
+@media all and (min-width: 768px) {
+	.BottomAdd {
+		padding-top: 37.5px;
+	}
+}
+
+@media all and (min-width: 1024px) {
+	.BottomAdd {
+		padding-top: 40px;
+	}
+}
+
+@media all and (min-width: 1440px) {
+	.BottomAdd {
+		padding-top: 50px;
+	}
+}
+			.foot{
+	text-align: left;
+}
+
+.highlight {
+	color: #ddd6f3;
+	font-weight: bolder;
+}
+
+.author { 
+	margin-top: 5px;
+	margin-bottom: 7px;
+	font-size: 10px;
+	font-weight: lighter;
+}
+
+@-webkit-keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes fade-out {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes fade-out {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-webkit-keyframes going-up {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-10px);}
+}
+@keyframes going-up {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-10px);}
+}
+@-webkit-keyframes going-down {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(10px);}
+}
+@keyframes going-down {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(10px);}
+}
+@-webkit-keyframes going-left {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-10px);}
+}
+@keyframes going-left {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-10px);}
+}
+@-webkit-keyframes working {
+  0% {width: 0%;}
+  50% {width: 40%;}
+  100% {width: 100%;}
+}
+@keyframes working {
+  0% {width: 0%;}
+  50% {width: 40%;}
+  100% {width: 100%;}
+}
+
+/* animation class */
+.fade-out-5-4 {
+  animation: fade-out 0.5s 0.4s;
+}
+
+
+#qna {
+	display: none;
+	opacity: 0;
+	font-family: 'Nanum Gothic', sans-serif;
+	min-height: 100vh;
+	margin-bottom: 30px;
+	
+}
+
+.q.box {
+	font-size: 25px;
+	padding: 18px 20px;
+	margin-bottom: 50px;
+}
+
+.a.box {
+	font-size: 20px;
+	padding: 15px 20px;
+	margin-bottom: 5px;
+}
+
+.status-bar {
+	margin: 0 12.5% 20px;
+	width: 75%;
+	height: 15px;
+	border: 3px solid white;
+	border-radius: 20px;
+	background: #fff;
+	animation: fade-in 0.3s ease-in-out;
+}
+.status {
+	height: 100%;
+	border-radius: 20px;
+	background-color: rgba(191, 168, 255, 0.7);
+}
+.box {
+	margin: 0 auto;
+	padding: 20px;
+	width: 80%;
+	border-radius: 20px;
+	background-color: white;
+}
+.q {
+	box-sizing: border-box;
+	/*margin-bottom: 30px;*/
+	font-size: 27.2px;
+	font-size: 1.7rem;
+	font-family: 'Nanum Gothic', sans-serif;
+	animation: fade-in 0.5s ease-in-out 0.3s forwards;
+	opacity: 0;
+}
+.answer {
+	width: 100%;
+}
+
+.a {
+	margin: 10px 10% 0 10%;
+	padding: 15px;
+	border: none;
+	font-size: 17.6px;
+	font-size: 1.1rem;
+	font-family: 'Nanum Gothic', sans-serif;
+	color: #434040;
+	text-align: left;
+	transition: background-color, color 0.2s linear;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.a:hover,
+.a:focus {
+	background: #ffc8c6;
+	color: white;
+}
+
+.a:last-child {
+	margin-bottom: 60px;
+}
+
+@media all and (min-width: 768px) {
+	.status-bar {
+		margin: 0px 15% 30px;
+		width: 70%;
+		height: 20px;
+	}
+	.box {
+		margin: 0 auto;
+		padding: 30px;
+		width: 80%;
+		border-radius: 20px;
+		background: rgb(252, 252, 252);
+	}
+	.q {
+		margin: 0 auto;
+		/*margin-bottom: 50px;*/
+		font-size: 32px;
+		font-size: 2rem;
+	}
+	.answer {
+		margin: 0 10%;
+		width: 80%;
+		font-size: 24px;
+		font-size: 1.5rem;
+	}
+	.a {
+		margin: 15px 0;
+		padding: 20px 30px;
+		width: 100%;
+		font-size: 20.8px;
+		font-size: 1.3rem;
+	}
+}
+
+@media all and (min-width: 1024px) {
+	.status-bar {
+		margin: 0px 15% 40px 15%;
+	}
+	.q {
+		/*margin-bottom: 80px;*/
+		font-size: 40px;
+		font-size: 2.5rem;
+	}
+	.answer {
+		font-size: 28.8px;
+		font-size: 1.8rem;
+	}
+	.a {
+		padding: 25px 35px;
+		width: 100%;
+		font-size: 22.4px;
+		font-size: 1.4rem;
+	}
+}
+
+@media all and (min-width: 1440px) {
+	.status-bar {
+		margin: 0 5% 40px 5%;
+		width: 90%;
+	}
+	.q {
+		/*margin-bottom: 80px;*/
+		width: 100%;
+		font-size: 40px;
+		font-size: 2.5rem;
+	}
+	.answer {
+		margin: 0;
+		width: 100%;
+		font-size: 28.8px;
+		font-size: 1.8rem;
+	}
+}
+			/* calc로 넘어갈 때 display: block; */
+#calc {
+	display: none;
+	opacity: 0;
+	min-height: 100vh;
+}
+.calc-bar {
+	position: relative;
+	box-sizing: border-box;
+	margin: 30vh 15vw 10px 15vw;
+	width: 70%;
+	height: 9vh;
+	line-height: 9vh;
+	border-radius: 10px;
+	background: #222;
+	color: #fff;
+	font-size: 8px;
+	font-size: 0.5rem;
+	font-weight: lighter;
+	letter-spacing: 11.2px;
+	letter-spacing: 0.7rem;
+	text-align: center;
+	animation: fade-in 0.5s ease-out 0s forwards, going-down 0.5s ease-out 0s forwards;
+	opacity: 0;
+}
+.calc-bar > .calc {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	border-radius: 10px; 
+	background: #57a0db; 
+
+	background: -moz-linear-gradient(left, #63b6f9 1%, #ddd6f3 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		left,
+		#57a0db 1%,
+		#ddd6f3 100%
+	);
+	background: linear-gradient(
+		to right,
+		#57a0db 1%,
+		#ddd6f3 100%
+	); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57a0db',
+endColorstr='#ddd6f3',GradientType=1 ); /* IE6-9 */
+	animation: working 5.5s 2s forwards;
+}
+.wait {
+	padding-bottom: 10px;
+	font-size: 27.2px;
+	font-size: 1.7rem;
+	font-weight: lighter;
+	text-align: center;
+	animation: fade-in 0.3s ease-out 0.6s forwards, going-down 0.3s ease-out 0.6s forwards;
+	opacity: 0;
+} /* media query */
+@media all and (min-width: 486px) {
+	.calc-bar {
+		font-size: 12.8px;
+		font-size: 0.8rem;
+		letter-spacing: 16px;
+		letter-spacing: 1rem;
+	}
+}
+@media all and (min-width: 768px) {
+	.calc-bar {
+		margin: 25vh 20vw 30px 20vw;
+		width: 60%;
+		font-size: 17.6px;
+		font-size: 1.1rem;
+		letter-spacing: 20.8px;
+		letter-spacing: 1.3rem;
+	}
+	.wait {
+		font-size: 32px;
+		font-size: 2rem;
+		font-weight: lighter;
+		text-align: center;
+	}
+}
+@media all and (min-width: 1024px) {
+	.calc-bar {
+		margin: 25vh 25vw 40px 25vw;
+		width: 50%;
+		font-size: 20.8px;
+		font-size: 1.3rem;
+		letter-spacing: 24px;
+		letter-spacing: 1.5rem;
+	}
+	.wait {
+		font-size: 35.2px;
+		font-size: 2.2rem;
+		font-weight: lighter;
+		text-align: center;
+	}
+}
+			/* result로 넘어갈 때 display: block; */
+#result {
+	display: none;
+	min-height: 100vh;
+	background: rgb(255, 255, 255);
+	text-align: center;
+	word-break: keep-all;
+	opacity: 0;
+}
+
+.result.title {
+	margin-top: 40px;
+	font-size: 20px;
+	font-family: 'a고딕14', sans-serif;
+}
+
+.res.desc {
+	font-size: 18px;
+	font-family: 'a고딕13', sans-serif;
+	margin-bottom: 50px;
+}
+
+#score-box {
+	margin-bottom: 10px;
+	font-size: 25px;
+	font-family: 'a고딕15', sans-serif;
+}
+#score-box > .title {
+	animation: fade-in 0.6s ease-out 0.4s forwards, going-down 0.6s ease-out 0.4s forwards;
+	opacity: 0;
+	margin-bottom: 30px;
+}
+
+#score-box > .point {
+	margin: 10px 0 50px 0;
+	font-size: 64px;
+	font-size: 4rem;
+	font-weight: bolder;
+	animation: fade-in 0.6s ease-out 1.8s forwards, going-down 0.6s ease-out 1.8s forwards;
+	opacity: 0;
+}
+
+.art {
+	width: 100%;
+	height: 100%;
+	max-height: 700px;
+	background-color: #fff;
+	animation: fade-in 0.3s ease-out 3.2s both, going-down 0.3s ease-out 3.2s both;
+	opacity: 0;
+}
+.art > img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.desc {
+	margin: 30px 7.5%;
+	width: 85%;
+	line-height: 28.8px;
+	line-height: 1.8rem;
+	font-size: 17.6px;
+	font-size: 1.1rem;
+	font-weight: 350;
+}
+#desc-box ~ p {
+	display: inline-block;
+	margin-top: 20px;
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+.go-artist {
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+#share-box {
+	margin: 30% 10% 30% 10%;
+	padding: 7px;
+	width: 40%;
+	height: 30px;
+	border: solid 2px;
+	border-color: #fff000;
+	border-radius: 40px;
+}
+
+#share-box span {
+	display: inline-block;
+	margin-right: 5px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.copy {
+	background: ghostwhite;
+	background-image: url('../img/copy.png');
+}
+
+.kakao {
+	background-image: url('https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png');
+}
+
+.fb {
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg');
+}
+
+#copyright {
+	padding: 0 7.5%;
+	text-align: center;
+}
+
+#copyright > p {
+	line-height: 20.8px;
+	line-height: 1.3rem;
+	font-size: 8px;
+	font-size: 0.7273rem;
+	font-weight: 100;
+}
+
+#copyright > p > a {
+	color: rgba(94, 134, 255, 0.8);
+	font-weight: bolder;
+}
+
+.btn {
+	box-sizing: border-box;
+	margin: 0 20% 15px 20%;
+	min-width: 200px;
+	height: 35px;
+	line-height: 30px;
+	border: 1.5px solid;
+	border-radius: 20px;
+	background: white;
+	color: black;
+	font-weight: 500;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+	color: #fff;
+}
+
+.Urlcopy {
+	border-color: #1a7cff;
+}
+
+.Urlcopy:hover {
+	background: #1a7cff;
+}
+
+.Kakao {
+	border-color: #f7e600;
+}
+
+.Kakao:hover {
+	background: #f7e600;
+}
+
+.Insta {
+	border-color: #dd2a7b;
+}
+
+.Insta:hover {
+	background: #dd2a7b;
+}
+
+
+.hash {
+	padding: 25px 7.5% 25px;
+	color: #ad93ff;
+	font-family: 'a고딕14', sans-serif;
+	word-wrap: break-word;
+}
+
+/* media query */
+@media all and (min-width: 486px) {
+	.art {
+		max-height: 1100px;
+	}
+	.artist {
+		margin: 0 7.5% 30px 7.5%;
+	}
+}
+
+@media all and (min-width: 768px) {
+	#score-box > .point {
+		font-size: 72px;
+		font-size: 4.5rem;
+	}
+	.pin {
+		width: 40px;
+		height: 40px;
+	}
+	.art {
+		max-height: 1500px;
+	}
+	.desc {
+		margin: 30px 7.5%;
+		line-height: 32px;
+		line-height: 2rem;
+		font-size: 19.2px;
+		font-size: 1.2rem;
+	}
+	
+}
+
+@media all and (min-width: 1024px) {
+	#score-box > .point {
+		font-size: 80px;
+		font-size: 5rem;
+	}
+	.pin {
+		width: 50px;
+		height: 50px;
+	}
+	.art {
+		margin: 0 5%;
+		width: 90%;
+		max-height: 2000px;
+	}
+	.desc {
+		font-size: 20.8px;
+		font-size: 1.3rem;
+	}
+	
+}
+
+@media all and (min-width: 1440px) {
+	#score-box > .point {
+		font-size: 88px;
+		font-size: 5.5rem;
+	}
+	.art {
+		max-height: 2000px;
+	}
+	.desc {
+		margin: 35px 5% 50px 5%;
+		width: 90%;
+		line-height: 33.6px;
+		line-height: 2.1rem;
+		font-size: 22.4px;
+		font-size: 1.4rem;
+	}
+}
+		</style>
 	</head>
 
 
@@ -193,5 +1038,433 @@
 		<script src="js/start1.js"></script>
 		<script src="js/end1.js"></script>
 		<script src="js/share1.js"></script>
+		
+		<script>
+
+const qnaList = [
+  {
+    q: '1. 오늘은 새학기 등교 첫날, 처음 만난 친구들에게',
+    a: [
+      { answer: '먼저 다가가 인사한다', type: ['2', '3', '4', '5'] },
+      { answer: '말을 걸어주길 기다린다', type: ['6', '1', '7', '8', '9', '10'] },
+
+    ]
+  },
+  {
+    q: '2. 친구가 나에게 취미를 물어본다 ',
+    a: [
+      { answer: '나는 영화보는 걸 좋아해', type: ['6', '1', '3', '10'] },
+      { answer: '나는 책읽는 걸 좋아해', type: ['2', '7', '8', '9'] },
+      { answer: '나는 운동하는 걸 좋아해', type: ['11', '4', '5', '12'] },
+    ]
+  },
+  {
+    q: '3. 기한이 오늘까지인 숙제, 당신은',
+    a: [
+      { answer: '전날까지 완벽하게 끝냈다', type: ['2', '1', '3', '9', '10'] },
+      { answer: '당일 아침 부랴부랴 준비한다', type: ['11', '5', '12'] },
+      { answer: '숙제가 있는 줄도 몰랐다', type: ['6', '7', '8', '4'] }
+    ]
+  },
+  {
+    q: '4. 필기 스타일은',
+    a: [
+      { answer: '삼색볼펜 한 자루면 충분해', type: ['2', '3', '4' ] },
+      { answer: '형형색색 형광펜을 사용한다', type: ['11', '9', '10', '5', '12' ] },
+      { answer: '연필이 최고', type: ['6', '1', '7', '8' ] },
+    ]
+  },
+  {
+    q: '5. 학교 공모전에 출전한 당신',
+    a: [
+      { answer: '학교 홍보 영상 공모전', type: ['2', '11', '9', '4', '5' ] },
+      { answer: '학교 로고 디자인 공모전', type: ['6', '1', '7', '12']},
+      { answer: '창업아이디어 공모전', type: ['3', '8', '10'] },
+    ]
+  },
+
+  {
+    q: '6. 당신의 수업 스타일은?',
+    a: [
+      { answer: '있는 듯 없는 듯 조용하게 듣는다', type: ['4', '5', '12' ] },
+      { answer: '궁금한 건 바로바로 질문한다', type: ['6', '1', '7', '9' ] },
+      { answer: '선생님과 아이컨택하며 듣는다', type: ['2', '11', '3', '8', '10' ] },
+    ]
+  },
+  {
+    q: '7. 나는 시험공부를',
+    a: [
+      { answer: '한 번에 몰아서 하는 편', type: ['2', '11', '12' ] },
+      { answer: '배운 건 바로 복습하는 편', type: ['3', '4', '5' ] },
+        ]
+  },
+  {
+    q: '8. 점심으로 이건 꼭 먹어야 해',
+    a: [
+      { answer: '돈까스', type: ['6', '4', '5' ] },
+      { answer: '떡볶이', type: ['1', '3', '7', '8', '9', '10' ] },
+      { answer: '김치찌개', type: ['2', '11', '12' ] },
+    ]
+  },
+  {
+    q: '9. 수업이 없는 날, 나는',
+    a: [
+      { answer: '친구들과 약속을 잡아 놀러간다', type: ['11', '6', '8', '5' ] },
+      { answer: '침대에 누워 넷플릭스를 시청한다', type: ['2', '1', '7', '12' ] },
+      { answer: '하루종일 잠만 잔다', type: ['3', '9', '10', '4' ] },
+    ]
+  },
+  {
+    q: '10. 내가 좋아하는 과제 방식 ',
+    a: [
+      { answer: '다다익선! 여럿이서 하는 팀프로젝트', type: ['4', '5', '12'] },
+      { answer: '혼자가 좋아. 개인 프로젝트', type: ['6', '3', '7', '8' ] },
+       ]
+  },
+  {
+    q: '11. 산더미처럼 쌓인 과제, 이럴 때 나는 ',
+    a: [
+      { answer: '차근차근 하나씩 해결해간다', type: ['2', '4', '5', '12' ] },
+      { answer: '여러 과제를 동시에 해결해간다', type: ['11', '6', '1', '7', '9'] },
+      ]
+  },
+  {
+    q: '12. 나는 이런 사람!',
+    a: [
+      { answer: '넘치는 창의력을 주체할 수 없는 사람', type: ['1', '7', '4', '5' ] },
+      { answer: '아이디어가 마구마구 샘솟는 사람', type: ['6', '3', '8', '9', '10'] },
+      { answer: '도전을 두려워 하지 않는 사람', type: ['2', '11', '12'] },
+    ]
+  }
+]
+
+const infoList = [
+  {
+    name: '디지털기술경영학과',
+    desc: '뭐든지 잘하는 다재다능한 당신! 디기경에 적합한 인재이군요. 호서대학교 디지털기술경영학과에서 당신의 재능을 펼쳐보세요.'},
+  {
+    name: '디지털기술경영학과',
+    desc: '뭐든지 잘하는 다재다능한 당신! 디기경에 적합한 인재이군요. 호서대학교 디지털기술경영학과에서 당신의 재능을 펼쳐보세요.'},
+  {
+    name: '디지털기술경영학과',
+    desc: '뭐든지 잘하는 다재다능한 당신! 디기경에 적합한 인재이군요. 호서대학교 디지털기술경영학과에서 당신의 재능을 펼쳐보세요.'},
+  {
+    name: '디지털기술경영학과',
+    desc: '뭐든지 잘하는 다재다능한 당신! 디기경에 적합한 인재이군요. 호서대학교 디지털기술경영학과에서 당신의 재능을 펼쳐보세요.'},
+  {
+    name: '디지털기술경영학과',
+    desc: '뭐든지 잘하는 다재다능한 당신! 디기경에 적합한 인재이군요. 호서대학교 디지털기술경영학과에서 당신의 재능을 펼쳐보세요.'},
+  {
+    name: '디지털기술경영학과',
+    desc: '뭐든지 잘하는 다재다능한 당신! 디기경에 적합한 인재이군요. 호서대학교 디지털기술경영학과에서 당신의 재능을 펼쳐보세요.'},
+  {
+    name: '디지털기술경영학과',
+    desc: '뭐든지 잘하는 다재다능한 당신! 디기경에 적합한 인재이군요. 호서대학교 디지털기술경영학과에서 당신의 재능을 펼쳐보세요.'},
+  {
+    name: '디지털기술경영학과',
+    desc: '뭐든지 잘하는 다재다능한 당신! 디기경에 적합한 인재이군요. 호서대학교 디지털기술경영학과에서 당신의 재능을 펼쳐보세요.'},
+  {
+    name: '디지털기술경영학과',
+    desc: '뭐든지 잘하는 다재다능한 당신! 디기경에 적합한 인재이군요. 호서대학교 디지털기술경영학과에서 당신의 재능을 펼쳐보세요.'},
+  {
+    name: '디지털기술경영학과',
+    desc: '뭐든지 잘하는 다재다능한 당신! 디기경에 적합한 인재이군요. 호서대학교 디지털기술경영학과에서 당신의 재능을 펼쳐보세요.'},
+  {
+    name: '디지털기술경영학과',
+    desc: '뭐든지 잘하는 다재다능한 당신! 디기경에 적합한 인재이군요. 호서대학교 디지털기술경영학과에서 당신의 재능을 펼쳐보세요.'},
+  {
+    name: '디지털기술경영학과',
+    desc: '뭐든지 잘하는 다재다능한 당신! 디기경에 적합한 인재이군요. 호서대학교 디지털기술경영학과에서 당신의 재능을 펼쳐보세요.'},     
+]
+		</script>
+		<script>const header = document.getElementById('header');
+const footer = document.getElementById('footer');
+
+const wrap = document.getElementById('wrap');
+const qna = document.getElementById('qna');
+const u_name = document.querySelector('input[type=text]');
+
+const tabletMQL = window.matchMedia('all and (min-width: 768px)');
+const pcMQL = window.matchMedia('all and (min-width: 1024px)');
+
+//질문
+const ENDPOINT = 12;
+//배열
+const select = [];
+let qIdx = -1;
+
+const calcScore = () => {
+	var pointArray = [
+		{ name: '1', value: 0, key: 0 },
+		{ name: '2', value: 0, key: 1 },
+		{ name: '3', value: 0, key: 2 },
+		{ name: '4', value: 0, key: 3 },
+		{ name: '5', value: 0, key: 4 },
+		{ name: '6', value: 0, key: 5 },
+		{ name: '7', value: 0, key: 6 },
+		{ name: '8', value: 0, key: 7 },
+		{ name: '9', value: 0, key: 8 },
+		{ name: '10', value: 0, key: 9 },
+		{ name: '11', value: 0, key: 10 },
+		{ name: '12', value: 0, key: 11 },
+	];
+
+	for (let i = 0; i < ENDPOINT; i++) {
+		var target = qnaList[i].a[select[i]];
+		for (let j = 0; j < target.type.length; j++) {
+			for (let k = 0; k < pointArray.length; k++) {
+				if (target.type[j] === pointArray[k].name) {
+					pointArray[k].value = pointArray[k].value + 1;
+				}
+			}
+		}
+	}
+
+	let resultArray = pointArray.sort(function (a, b) {
+		if (a.value > b.value) {
+			return -1;
+		}
+		if (a.value < b.value) {
+			return 1;
+		}
+		return 0;
+	});
+	console.log('결과 : ', resultArray);
+	let resultword = resultArray[0].key;
+	return resultword;
+};
+
+const goResult = () => {
+	//pc
+	if (pcMQL.matches) {
+		
+		wrap.style.marginTop = '150px';
+	
+	} else if (tabletMQL.matches) {
+		
+		wrap.style.marginTop = '115px';
+	}
+
+	const result = document.getElementById('result');
+	const point = calcScore(); 
+
+	const pTitle = document.querySelector('.p');
+	pTitle.innerHTML = '당신의 결과는 ...';
+
+	const img_url = 'img/image-' + point + '.png';
+
+	const res_img = document.createElement('img');
+	res_img.src = img_url; 
+	res_img.alt = point; 
+	res_img.title = infoList[point].name; 
+
+
+
+	const res_img_div = document.querySelector('.art');
+	res_img_div.appendChild(res_img);
+
+	const animal = document.querySelector('.result');
+	animal.innerHTML = infoList[point].name;
+
+	
+	const desc = document.querySelector('.res');
+	desc.innerHTML = infoList[point].desc;
+
+	
+	setTimeout(() => {
+		header.style.display = 'none';
+		footer.style.display = 'block';
+		result.style.display = 'block';
+		header.style.animation = 'fade-in 0.3s forwards';
+		footer.style.animation = 'fade-in 0.3s forwards';
+		result.style.animation = 'going-up 0.5s, ' + 'fade-in 0.5s forwards';
+	}, 600);
+};
+
+const end = () => {
+	qna.style.animation = '';
+	
+	const interval = setInterval(() => {
+		qna.style.opacity -= 0.1;
+		qna.style.transform = 'translateY(-1px)';
+	}, 50);
+
+	
+	setTimeout(() => clearTimeout(interval), 500);
+	
+	setTimeout(() => {
+		qna.style.display = 'none'
+		goResult();
+	}, 500);
+};
+
+
+const addAnswer = (answerTxt, idx) => {
+	const answer = document.createElement('button');
+	answer.className += 'a box';
+	answer.innerHTML = answerTxt;
+
+	answer.addEventListener('click', () => {
+
+		const parent = answer.parentNode;
+		const children = parent.childNodes;
+		for (let i in children) {
+			children[i].disabled = true;
+		}
+
+		
+		parent.classList.add('fade-out-5-4');
+		setTimeout(() => {
+			select[qIdx] = idx;
+			a.innerHTML = '';
+			parent.classList.remove('fade-out-5-4');
+			goNext();
+		}, 800);
+	});
+
+	setTimeout(
+		() => (answer.style.animation = 'going-down 0.25s forwards, fade-in 0.25s forwards'), 50
+	);
+	const a = document.querySelector('.answer');
+	a.appendChild(answer);
+};
+
+const goNext = () => {
+	if (qIdx++ === qnaList.length - 1) {
+		//end
+		end();
+		return;
+	}
+
+	const status = document.querySelector('.status');
+	status.style.width = (100/ENDPOINT) * (qIdx + 1) + '%';
+
+	const qNum = qnaList[qIdx];
+	const q = document.querySelector('.q');
+	q.innerHTML = qNum.q;
+
+
+	qna.style.animation =
+		'fade-in 0.3s ease-in-out 0.4s forwards, ' + 'going-down 0.3s ease-in-out 0.4s forwards';
+
+	setTimeout(() => {
+	
+		const endIdx = qNum.a.length - 1;
+		for (let i in qNum.a) {
+			addAnswer(qNum.a[i].answer, i);
+		}
+		qna.style.opacity = 1;
+	}, 700);
+};
+
+const begin = () => {
+	const main = document.getElementById('main');
+	footer.style.animation = 'going-down 0.4s forwards, ' + 'fade-out 0.4s forwards';
+	setTimeout(
+		() =>
+			(main.style.animation =
+				'going-up 0.4s ease-in-out forwards, ' + 'fade-out 0.4s ease-in-out forwards'),
+		500
+	);
+	setTimeout(() => {
+		window.scrollTo(0,0);
+		footer.style.display = 'none';
+		main.style.display = 'none';
+		qna.style.display = 'block';
+		if (pcMQL.matches) {
+			
+			wrap.style.marginTop = '50px';
+		} else if (tabletMQL.matches) {
+			
+			wrap.style.marginTop = '30px';
+		}
+		goNext();
+	}, 1000);
+};
+
+const load = () => {
+	const start_btn = document.querySelector('.start');
+
+	start_btn.addEventListener('click', () => {
+		try {
+			start_btn.disabled = true;
+			begin();
+		} catch (err) {
+			
+		}
+	});
+};
+
+window.onload = load();
+		</script>
+		<script>
+			function showhide() {
+  var x = document.getElementById("copyright");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+		</script>
+		<script>
+			function createDescription(){
+	const imageNumber = checkImage();
+	console.log(imageNumber);
+	if(imageNumber === "error"){
+		return 0;
+	}
+	switch (imageNumber) {
+		case 0:
+			var shareDescription = infoList[0].name;
+			break;
+		case 1:
+			var shareDescription = infoList[1].name;
+			break;
+		case 2:
+			var shareDescription = infoList[2].name;
+			break;
+		case 3:
+			var shareDescription = infoList[3].name;
+			break;
+		case 4:
+			var shareDescription = infoList[4].name;
+			break;
+		case 5:
+			var shareDescription = infoList[5].name;
+			break;
+		case 6:
+			var shareDescription = infoList[6].name;
+			break;
+		case 7:
+			var shareDescription = infoList[7].name;
+			break;
+		case 8:
+			var shareDescription = infoList[8].name;
+			break;
+		case 9:
+			var shareDescription = infoList[9].name;
+			break;
+		case 10:
+			var shareDescription = infoList[10].name;
+			break;
+		case 11:
+			var shareDescription = infoList[11].name;
+			break;		
+	}
+	var shareTitle = '학과테스트 결과'
+	const shareImageUrl = url + '/img/image/' + imageNumber + '.png';
+	sendKakaoLink(shareTitle, shareDescription, shareImageUrl);
+}
+
+const copy = () => {
+  const tmp = document.createElement('textarea');
+  document.body.appendChild(tmp);
+  tmp.value = url;
+  tmp.select();
+  document.execCommand('copy');
+  document.body.removeChild(tmp);
+}
+		</script>
 	</body>
 </html>
